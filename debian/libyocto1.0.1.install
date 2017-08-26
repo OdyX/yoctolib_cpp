@@ -1,0 +1,3 @@
+#! /usr/bin/dh-exec
+./Binaries/linux/*/libyocto.so.* usr/lib/${DEB_HOST_MULTIARCH}/
+./udev_conf/51-yoctopuce_all.rules lib/udev/rules.d/

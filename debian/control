@@ -1,0 +1,32 @@
+Source: yoctolib-cpp
+Section: non-free/libs
+Priority: extra
+Maintainer: Didier Raboud <odyx@debian.org>
+Build-Depends:
+ debhelper (>= 10.2.5~),
+ dh-exec,
+ libusb-1.0-0-dev
+Standards-Version: 4.1.0
+Homepage: https://www.yoctopuce.com/
+
+Package: libyocto1.0.1
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: libYocto, needed for all binaries
+
+Package: libyocto-dev
+Section: non-free/libdevel
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: libYocto-dev, for the static version
+
+Package: libyapi1.0.1
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: libYAPI, needed for all binaries
+
+Package: libyapi-dev
+Section: non-free/libdevel
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: libYAPI-dev, for the static version

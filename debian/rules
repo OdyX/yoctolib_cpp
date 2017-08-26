@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --sourcedirectory=Binaries/
+
+override_dh_link:
+	ln -s /usr/lib/${DEB_HOST_MULTIARCH}/libyocto.so.1.0.1 debian/libyocto-dev/usr/lib/${DEB_HOST_MULTIARCH}/libyocto.so
+	ln -s /usr/lib/${DEB_HOST_MULTIARCH}/libyapi.so.1.0.1 debian/libyapi-dev/usr/lib/${DEB_HOST_MULTIARCH}/libyapi.so
+	dh_link
+

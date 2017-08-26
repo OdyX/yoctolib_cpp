@@ -1,0 +1,3 @@
+#! /usr/bin/dh-exec
+./Binaries/linux/*/libyocto-static.a usr/lib/${DEB_HOST_MULTIARCH}/
+Sources/*.h usr/include/
